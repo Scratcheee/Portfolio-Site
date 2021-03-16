@@ -1,0 +1,172 @@
+body {
+    background-color: #212132;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23393957' fill-opacity='0.22' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+ 
+}
+
+body, html {
+    height: 100%;
+}
+
+
+
+.bg-custom {
+    background-color: #FFCC00;
+}
+
+.logo {
+    font-family: Limelight;
+    font-size: 30px;
+
+}
+.logo img {
+    width: 25%;
+    height: auto;
+}
+
+.nav-item {
+    font-family: Oswald;
+}
+
+#portfolio {
+    margin: 60px auto;
+}
+
+#grid {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#grid li {
+    list-style-type: none;
+    position: relative;
+    float: left;
+    width: 18.5714285714%;
+    padding: 0 0 21.4450676344% 0;
+    -o-transform: rotate(-60deg) skewY(30deg);
+    -moz-transform: rotate(-60deg) skewY(30deg);
+    -webkit-transform: rotate(-60deg) skewY(30deg);
+    -ms-transform: rotate(-60deg) skewY(30deg);
+    transform: rotate(-60deg) skewY(30deg);
+    background: #fd005f;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+#grid li .hexagon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFCC00;
+    -o-transform: skewY(-30deg) rotate(60deg);
+    -moz-transform: skewY(-30deg) rotate(60deg);
+    -webkit-transform: skewY(-30deg) rotate(60deg);
+    -ms-transform: skewY(-30deg) rotate(60deg);
+    transform: skewY(-30deg) rotate(60deg);
+    overflow: hidden;
+
+}
+
+#grid li * {
+    visibility: visible;
+}
+
+#grid li:nth-child(2n+2) {
+    margin: 0 1%;
+  }
+
+  #grid li:nth-child(10n+6), #grid li:nth-child(10n+7), #grid li:nth-child(10n+8), #grid li:nth-child(10n+9), #grid li:nth-child(10n+10) {
+    margin-top: -4.6%;
+    margin-bottom: -10;
+    -o-transform: translateX(47%) rotate(-60deg) skewY(30deg);
+    -moz-transform: translateX(47%) rotate(-60deg) skewY(30deg);
+    -webkit-transform: translateX(47%) rotate(-60deg) skewY(30deg);
+    -ms-transform: translateX(47%) rotate(-60deg) skewY(30deg);
+    transform: translateX(47%) rotate(-60deg) skewY(30deg);
+}
+
+#grid li .hexagon img {
+    left:-100%;
+    right:-100%;
+    height:200%;
+    width: auto;
+    margin: 0 auto;
+    -o-transition: all 0.6s linear 0s; 
+    -moz-transition: all 0.6s linear 0s; 
+    -ms-transition: all 0.6s linear 0s; 
+    -webkit-transition: all 0.6s linear 0s; 
+    transition: all 0.6s linear 0s;
+    
+  }
+
+#grid li:hover img {
+    height: 250%;
+    -o-transform: translateZ(0) translateX(-25%);
+    -moz-transform: translateZ(0) translateX(-25%);
+    -webkit-transform: translateZ(0) translateX(-25%);
+    -ms-transform: translateZ(0) translateX(-25%);
+    transform: translateZ(0) translateX(-25%);
+  }
+  
+  #grid li .hexagon .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255,255,255,0);
+  }
+  
+  #grid li:hover .overlay {
+    -o-transition: all 0.6s linear 0s; 
+    -moz-transition: all 0.6s linear 0s; 
+    -ms-transition: all 0.6s linear 0s; 
+    -webkit-transition: all 0.6s linear 0s; 
+    transition: all 0.6s linear 0s;
+    background: rgba(255,255,255,0.1);
+  }
+
+
+
+
+@media only screen and (max-width: 767px) {
+    #grid li {
+        margin: auto;
+        width: 27.85714285714286%;
+    padding: 0 0 32.16760145166612% 0;
+    }
+    #grid li:nth-child(6n+4), #grid li:nth-child(6n+5), #grid li:nth-child(6n+6) {
+        margin-top: -7.3%;
+        margin-bottom: -.9285714285%;
+        -o-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+        -moz-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+        -webkit-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+        -ms-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+        transform: translateX(48.5%) rotate(-60deg) skewY(30deg);
+    }
+  }
+
+  .site-footer {
+    background-color: black;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+}
+
+#contact{
+    color: #7f6600;
+}

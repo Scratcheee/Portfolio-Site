@@ -5,53 +5,71 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css">
+
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Oswald:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/styles.css">
   <title>lKaul Portfolio</title>
 </head>
 
 <body>
   <!--Navigation-->
-  <nav class="navbar navbar-expand-sm navbar-light sticky-top bg-custom">
+  <nav class="navbar navbar-expand-sm navbar-dark sticky-top bg-custom">
     <div class="container">
-      <a class="navbar-brand logo" href="#">l.Kaul</a>
+      <a class="navbar-brand logo" href="#"><img src="images/logo.png" alt="" srcset=""> l.Kaul</a>
 
       <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#portfolioNavbar">
         <span class="navbar-toggler-icon"> </span>
       </button>
-      
+
       <div class="collapse navbar-collapse" id="portfolioNavbar">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="#">Projects</a>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Projects</a>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
-
-  <div class="container portfolio">
+  <!--Portfolio-->
+  <div class="container" id="portfolio">
     <ul id="grid" class="clear">
       <li>
-        <div class="hexagon"><img src="images/stock1.jpg" alt=""><div class="overlay"></div></div>
-    </li>
-    <li>
-        <div class="hexagon"><img src="images/stock2.jpg" alt=""><div class="overlay"></div></div>
-    </li>
-    <li>
-        <div class="hexagon"><img src="images/stock3.jpg" alt=""><div class="overlay"></div></div>
-    </li>
-    <li>
-        <div class="hexagon"><img src="images/stock4.jpg" alt=""><div class="overlay"></div></div>
-    </li>
-    <li>
-        <div class="hexagon"><img src="images/stock5.jpg" alt=""><div class="overlay"></div></div>
-    </li>
-    <!-- <li>
+        <div class="hexagon">
+          <img src="images/stock1.jpg" alt="">
+          <div class="overlay"></div>
+        </div>
+      </li>
+      <li>
+        <div class="hexagon">
+          <img src="images/stock2.jpg" alt="">
+          <div class="overlay"></div>
+        </div>
+      </li>
+      <li>
+        <div class="hexagon">
+          <img src="images/stock3.jpg" alt="">
+          <div class="overlay"></div>
+        </div>
+      </li>
+      <li>
+        <div class="hexagon">
+          <img src="images/stock4.jpg" alt="">
+          <div class="overlay"></div>
+        </div>
+      </li>
+      <li>
+        <div class="hexagon">
+          <img src="images/stock5.jpg" alt="">
+          <div class="overlay"></div>
+        </div>
+      </li>
+      <!-- <li>
         <div class="hexagon"></div>
     </li>
     <li>
@@ -66,24 +84,58 @@
     <li>
         <div class="hexagon"></div>
     </li> -->
-    
+
     </ul>
   </div>
 
 
-  
-  
-  <!--Parallax Test-->
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4">About Me</h1>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus tortor, laoreet vel elit lobortis, vestibulum elementum dolor. Mauris sed neque eget libero luctus vulputate. Vestibulum nunc nisl, blandit a rhoncus ut, feugiat ut tortor. Suspendisse potenti. Donec eu erat sit amet tortor vulputate volutpat nec id mi. Ut tempus dignissim commodo. Nunc sit amet libero malesuada dui ultricies maximus. Maecenas congue, augue ac malesuada mollis, massa justo varius enim, eget dignissim velit ligula eu sapien. Phasellus condimentum, tellus nec cursus pretium, nisl elit semper magna, ac venenatis turpis tortor at mauris. Etiam vitae neque tortor. Curabitur tincidunt justo quis faucibus auctor. Quisque posuere orci ac dolor gravida, ac aliquet justo convallis.</p>
+
+  <!--About-->
+  <div class="container" id="about">
+    <div class="row">
+      <div class="jumbotron jumbotron-fluid jumbo-cus">
+        <div class="col-5">
+
+          <img src="images/headshot.png" class="img-fluid ml-auto" alt="">
+        </div>
+        <div class="col">
+
+          <h1 class="display-4">About Me</h1>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus tortor, laoreet vel elit
+            lobortis, vestibulum elementum dolor. Mauris sed neque eget libero luctus vulputate. Vestibulum nunc nisl,
+            blandit
+            a rhoncus ut, feugiat ut tortor. Suspendisse potenti. Donec eu erat sit amet tortor vulputate volutpat nec
+            id
+            mi.
+            Ut tempus dignissim commodo. Nunc sit amet libero malesuada dui ultricies maximus. Maecenas congue, augue ac
+            malesuada mollis, massa justo varius enim, eget dignissim velit ligula eu sapien. Phasellus condimentum,
+            tellus
+            nec cursus pretium, nisl elit semper magna, ac venenatis turpis tortor at mauris. Etiam vitae neque tortor.
+            Curabitur tincidunt justo quis faucibus auctor. Quisque posuere orci ac dolor gravida, ac aliquet justo
+            convallis.
+          </p>
+        </div>
+      </div>
     </div>
+
   </div>
 
-  <div class="contactPlaceholder">
-    Contact placeholder
+  <!--Contact-->
+  <!-- <footer class="site-footer" id="contact"> -->
+  <div class="container contact">
+    <div class="row">
+      <div class="col text-center mx-auto">
+        <a href="https://github.com/Scratcheee"><i class="bi bi-github"></i></a>
+      </div>
+      <div class="col text-center mx-auto">
+        <a href="https://www.linkedin.com/in/lawrence-kaul/"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+
     </div>
+  </div>
+  <!-- </footer> -->
+
 
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
