@@ -153,3 +153,28 @@ i {
 
 #contact {
   color: #f9d276; }
+
+.modal {
+  margin-top: 100px; }
+
+.modal-body {
+  background-color: #44000d; }
+
+.modal-header {
+  background-color: #83142c; }
+
+.modal-footer {
+  background-color: #83142c; }
+
+.btn-link {
+  background-color: #ad1d45;
+  color: #f9d276;
+  border-style: solid, #f9d276; }
+
+.btn-outline {
+  color: #f9d276;
+  border-color: #f9d276; }
+
+.btn-outline:hover {
+  background-color: #f9d276;
+  border-color: #f9d276; }

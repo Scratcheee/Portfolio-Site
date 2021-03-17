@@ -189,3 +189,33 @@ i {
 #contact{
     color: $color-acc;
 }
+.modal {
+    margin-top: 100px;
+}
+
+.modal-body {
+    background-color: $color-main;
+}
+
+.modal-header {
+    background-color: $color-sec;
+}
+
+.modal-footer {
+    background-color: $color-sec;
+}
+
+.btn-link {
+    background-color: $color-ter;
+    color: $color-acc;
+    border-style: solid, $color-acc;
+}
+
+.btn-outline {
+    color: $color-acc;
+    border-color: $color-acc;
+}
+.btn-outline:hover {
+    background-color: $color-acc;
+    border-color: $color-acc;
+}
