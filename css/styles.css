@@ -155,7 +155,9 @@ i {
   color: #f9d276; }
 
 .modal {
-  margin-top: 100px; }
+  margin-top: 100px;
+  overflow-y: auto;
+  max-height: calc(100vh - 10rem); }
 
 .modal-body {
   background-color: #44000d; }
