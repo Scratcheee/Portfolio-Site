@@ -1,7 +1,5 @@
 
 //TODO: Fix mobile modal button
-//TODO: Add contact info
-//TODO: Add contact modal
 
 const descriptions = [
     "Sed ornare a nisi sed commodo. Phasellus in faucibus est. Nunc vitae urna quis magna pellentesque sollicitudin quis et ipsum. Integer vel pellentesque dui. Nam.", 
